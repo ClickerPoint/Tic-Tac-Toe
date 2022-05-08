@@ -1,0 +1,125 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Macondo', cursive;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.background{
+  background-color:#75CDD8 ;
+  padding-top: 1px;
+
+
+}
+
+
+.title{
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 10%;
+}
+
+.display{
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 1em
+}
+ 
+.board {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  padding-bottom:350px;
+  
+}
+
+.cell {
+  width:100px;
+  height: 100px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.playerX{
+color: #FF8296;
+font-size: 45px;
+}
+
+.playerO{
+ color: #FFCA27;
+ font-size: 45px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+
+  
+  
+}
+.hide {
+  display: none;
+  
+}
+
+.controls button {
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  margin-left: 1em;
+  cursor: pointer; 
+}
+
+
+#reset {
+  background-color: #FFEC00;
+  
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+
+.cell:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.cell:nth-child(3n + 3) {
+  border-right: none;
+}
+
+.cell:last-child,
+.cell:nth-child(8),
+.cell:nth-child(7) {
+  border-bottom: none;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
