@@ -1,4 +1,4 @@
-# Tic-Tac-Toe: <a href="stephtictactoe.netlify.app">Live Site</a></h1>
+# Tic-Tac-Toe: <a href="https://stephtictactoe.netlify.app/">Live Site</a></h1>
 
 
 ## How It's Made:
